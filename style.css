@@ -1,0 +1,536 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+body {
+    font-family: 'Oswald' ;
+    font-weight: 600px;
+    cursor: default;
+    background-color: whitesmoke;
+}
+
+html {  
+    scroll-behavior: smooth;  
+}
+
+/* Button Overlay to Top of Page */
+#topButton {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 6%;
+    height: 25px;
+    font-size: 15px;
+    background-color: rgb(224,251,252, 0.5);
+    border: 2px solid rgb(0, 0, 0, 0.4);
+    border-radius: 10px;
+    color: rgb(41,50,65,0.8);
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    position: fixed;
+    bottom: 25px;
+    right: 50px;
+    display: none;
+}p
+    #topButton:hover {
+        background-color: rgb(224,251,252, 0.8);
+        color: rgb(41,50,65,1);
+        }
+
+
+
+/* Navigation Bar */
+nav {
+    /* background-color: rgb(230, 165, 165); */
+    display: flex;
+    align-items: center;
+    padding: 1% 0;
+    width: 100%;
+    height: 50px;
+    min-height: 10%;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+    /* position: fixed;
+    top: 0; */
+}
+    /* Left Side of Nav */
+    #navLeft {
+        /* background-color: rgb(94, 94, 94); */
+        display: flex;
+        align-items: center;
+        width: 60%;
+        justify-content: space-between;
+    }
+        /* My Name */
+        #myName {
+            width: 30%;
+            font-family: 'Montserrat';
+            color: rgb(243, 144, 86);
+            height: 60px;
+            font-size: 250%;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            
+        }
+
+        /* Page Jump To */
+        #navLinks {
+            width: 60%;
+            display: flex;
+            align-items: center;
+            color: rgba(61,90,128,255);
+            font-size: 125%;
+            /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); */
+        }
+            #navLinks > p:hover {
+                color: rgba(152,193,217,255);
+                cursor: pointer;
+            }
+            #navLinks > :nth-child(3) {
+                font-weight: bolder;
+            }
+
+        /*Let's Talk Button  */
+        nav > button {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            width: 10%;
+            height: 50px;
+            font-size: 25px;
+            background-color: rgb(243, 144, 86);
+            border: 3px solid black;
+            border-radius: 10px;
+            color: whitesmoke;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Montserrat';
+            padding-bottom: 5px;
+        }
+            nav > button:hover {
+                background-color: rgb(243, 144, 86,0.9);
+                color: white;
+                }
+
+
+
+/* Header */
+header {
+    background-color: whitesmoke;
+    width: 90%;
+    height: 750px;
+    display: flex;
+}
+
+    /* Left Side Profile Pic */
+    #me {
+        border-radius: 50%;
+        height: 70%;
+        width: 30%;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+        margin-top: 20px;
+    }
+
+    /* Right Side */
+    #rightProfile {
+        /* outline: 2px solid red; */
+        width: 70%;
+    }
+
+        /* Header Statement */
+        #statement {
+            font-size: 375%;
+            font-weight: bolder;
+            /* display: flex; */
+            align-items: center;
+            color: rgba(41,50,65,255);
+            margin: 50px 0 50px 0;
+            text-align: center;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+        }
+            #passion {
+                color: rgb(243, 144, 86);
+                font-size: 150%;
+                text-decoration: underline;
+                text-decoration-color: rgba(152,193,217,255);
+                text-decoration-line: underline;
+                text-decoration-thickness: 5px;
+                font-family: 'Montserrat';
+            }
+
+        /* View Work Button */
+        #viewWork {
+            background-color: rgb(243, 144, 86);
+            border: 3px solid black;
+            box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            width: 40%;
+            height: 125px;
+            align-items: center;
+            display: flex;
+            font-size: 50px;
+            color: whitesmoke;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: 'Montserrat';
+        }
+            #viewWork:hover {
+                background-color: rgb(243, 144, 86, 0.9);
+                color: white;
+            }
+            #viewWork > p {
+                cursor: pointer;
+            }
+
+        /* Social Links */
+        #socialLinks {
+            display: flex;
+            width: 100%;
+            text-decoration: none;
+            justify-content: flex-start; 
+            margin: 50px;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);       
+        }
+            .links {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+                .links > img {
+                    height: 55px;
+                    border-radius: 50%;
+                }
+                .links > a {
+                    font-size: 225%;
+                    text-decoration: none;
+                    color: rgba(41,50,65,255);
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+                
+
+
+/* Main */
+main {
+    background-color: rgba(41,50,65,255);
+    padding-top: 100px;
+    width: 100%;
+    height: 650px;
+}
+
+    /* Text Divider Font Style */
+    .headTag {
+        color: rgb(243, 144, 86);
+        display: flex;
+        justify-content: center;
+        font-size: 375%;
+        font-family: 'Montserrat';
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+        .line {
+            border-bottom: 2px solid rgba(152,193,217,255);
+            width: 50%;
+            border-radius: 50%;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+
+    /* About Me  */
+    #aboutMe {
+        width: 75%;
+        height: 250px;
+    }
+        #aboutMe > h1 {
+            color: rgba(152,193,217,255);
+            text-align: center;
+            padding: 10px 0;
+            font-family: 'Montserrat';
+        }
+        #aboutMe > p {
+            width: 50%;
+            color: rgba(152,193,217,255);
+            text-align: center;
+            font-size: 175%;
+            padding: 10px 0;
+            /* font-family: 'Times New Roman', Times, serif; */
+            font-weight: lighter;
+            font-family: 'Oswald';
+        }
+
+    /* Skills */
+    #skills {
+            background-color: whitesmoke;
+            width: 75%;
+            height: 750px;
+            position: relative;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 2%;
+            margin-bottom: 200px;
+            padding-top: 25px;
+    }
+            .logoDiv {
+                /* outline: 2px solid red; */
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                margin: 50px 0;
+                padding: 0 200px;
+            }
+                .logoDiv > a > img{
+                    height: 150px;
+                    margin: 40px 25px;
+                    align-items: center;
+                    transition: 0.5s;
+                }
+                    .logoDiv > a > img:hover {
+                        transform:scale(1.5);
+                        cursor: pointer;
+                    }  
+                    #Java {
+                        height: 175px;
+                    } 
+
+    /* Projects */
+    #projects {
+        /* outline: 2px solid red; */
+        background-color: rgba(224,251,252, 0.5);
+        width: 75%;
+        height: 1700px;
+        margin-bottom: 200px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        padding: 50px;
+    }
+
+        /* Image on Left Half Divs */
+        .presentation{
+            /* outline: 2px solid blue; */
+            height: 400px;
+            display: flex;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+            .presentation > a {
+                width: 28%;
+            }
+            .projectImage {
+                background-color: rgb(253, 95, 3, 0.5);
+                height: 100%;
+                border-radius: 5%;
+                cursor: pointer;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+                outline: 1px solid rgba(41,50,65,255);
+                /* outline: 2px solid blue; */
+            }
+
+            .textHalf {
+                /* outline: 2px solid blue; */
+                margin: 15px;
+            }
+                .projectTitle {
+                    /* outline: 2px solid green; */
+                    margin-bottom: 15px;
+                    color: rgb(41,50,65,255);
+                    font-family: 'Montserrat';
+                }
+                .textHalf > p {
+                    /* outline: 2px solid purple; */
+                    margin-bottom: 10%;
+                    font-size: 110%;
+                    margin-bottom: 10%;
+                    color: rgba(61,90,128,255);    
+                }
+        
+        /* Image on Right Half Divs */
+        .presentationRight {
+            /* outline: 2px solid blue; */
+            height: 400px;
+            display: flex;
+            margin-bottom: 25px;
+            text-align: right;
+        }
+        .presentationRight > a {
+            width: 28%;
+        }
+        
+
+    /* Resume */
+    #resume {
+        /* outline: 2px solid red; */
+        width: 75%;
+        height: 900px;
+        margin-bottom: 100px;
+        box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 10%;
+    }
+        #resumeContainer {
+            display: flex;
+        }
+        #leftResume {
+            /* outline: 2px solid red; */
+            width: 50%;
+            margin: 25px;
+            padding-left: 10%;
+        }
+        #rightResume {
+            /* outline: 2px solid red; */
+            width: 50%;
+            margin: 25px;
+            padding-left: 15%;
+        }
+            .resumeTagline {
+                font-family: 'Montserrat';
+                color: rgb(243, 144, 86);
+                margin-bottom: 25px;
+                margin-top: 40px;
+            }
+            .resumeContent > h3 {
+                font-size: 110%;
+                color: rgb(41,50,65,);
+                margin-bottom: 5px; 
+                font-family: 'Montserrat';
+            }
+            .resumeContent > p {
+                font-size: 110%;
+                color: rgba(61,90,128,255);
+                margin-bottom: 10px;
+                padding-left: 15px;
+            }
+
+
+    /* Footer */
+    footer {
+        background-color: rgba(41,50,65,255);
+        min-height: 600px;
+        width: 100%;
+    }
+        .contactForm {
+            /* outline: 2px solid red; */
+            width: 50%;
+            padding: 10px 0;
+        }
+            .contactInputs {
+                width: 50%;
+                display: flex;
+                margin: 2% 25%;
+                height: 40px;
+                background-color: whitesmoke;
+                color: rgb(41,50,65);
+                border-radius: 20px;
+                text-align: left;
+                font-size: 25px;
+                padding-left: 15px;
+                font-family: 'Montserrat';
+            }
+                .contactForm > textarea {
+                    height: 100px;
+                    padding-top: 5px;
+                }
+            .contactForm > button {
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+                width: 50%;
+                height: 75px;
+                font-size: 40px;
+                background-color: rgb(243, 144, 86);
+                border: 3px solid black;
+                border-radius: 10px;
+                color: whitesmoke;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+                font-weight: bold;
+                display: flex;
+                margin: 5% 25%;
+                font-family: 'Montserrat';
+                padding-top: 10px;
+                }
+                .contactForm > button:hover {
+                    background-color: rgb(243, 144, 86,0.9);
+                    color: white;
+                    }
+
+
+
+
+
+
+
+
+
+
+/* Transition Effects */
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+    .hidden {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-100%);
+        transition: 700ms;
+    }
+    .fade {
+        opacity: 0;
+        filter: blur(5px);
+    }
+
+    .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+
+    /* nthChild() Delay Effects for smooth scrolling */
+        .delay:nth-child(1) { /* About Me - orange text */
+            transition-delay: 200ms;
+        }
+        .delay:nth-child(2) { /* underline */
+            transition-delay: 200ms;
+        }
+        .delay:nth-child(3) { /* About Me - paragraph */
+            transition-delay: 600ms;
+        }
+        .delay:nth-child(4) { /* Skills Text Box */
+            transition-delay: 200ms;
+        }
+        #languageLogos { /* Logo Division */
+            transition-delay: 600ms;
+        }
+        /* Projects */
+        #ordinance { 
+            transition-delay: 200ms;
+        }
+        #instaFilesWAV { 
+            transition-delay: 200ms;
+        }
+        #timeFlies { 
+            transition-delay: 200ms;
+        }
+        #tracks { 
+            transition-delay: 200ms;
+        }
+        .textHalf {
+            transition-delay: 300ms;
+        }
+        .projectImageDelay {
+            transition-delay: 300ms;
+        }
+
+/* 
+
+.colorPalate {
+    white = rgba(224,251,252,255)
+    
+    light = rgba(152,193,217,255)
+    
+    dark = rgba(41,50,65,255)
+    
+    main = rgba(61,90,128,255)
+    
+    orange = rgb(253, 95, 3)
+
+} 
+ */

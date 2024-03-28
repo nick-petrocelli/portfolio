@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" 
+            rel="stylesheet">
+        
+        <link rel="stylesheet" href="style.css">
+        
+        <title>Portfolio Website</title>
+    </head>
+<body>
+        
+    <button id="topButton" class="hidden" onclick="scrollToTop()">Top of Page</button>
+        
+    <!-- Nav Bar -->
+    <nav>
+        
+        <div id="navLeft">
+            
+            <!-- Home Button // Name -->
+            <h1 id="myName">Nick Petrocelli</h1>
+            
+            <!-- Jump To: (list of main points) -->
+            <div id="navLinks">
+                <p onclick="scrollToDiv('aboutMeNav')">About Me</p>
+                <p onclick="scrollToDiv('skillsNav')">Skills & Languages</p>
+                <p onclick="scrollToDiv('projectsNav')">Projects</p>
+                <p onclick="scrollToDiv('resumeNav')">Resume</p>
+            </div>
+            
+        </div>
+        
+        <!-- Scroll Down Button -->
+        <button onclick="scrollToBottom()">Let's Talk</button>
+        
+    </nav>
+    
+    
+    <!-- Header -->
+    <header>
+        
+        <!-- Left Side -->
+        <img id="me" src="images/socials/profilePic.jpg" alt="image of Nick">
+        
+        <!-- Right Side -->
+        <div id="rightProfile">
+            
+            <!-- Objective Statement -->
+            <div id="statement">
+                <p >Merging <span id="passion">Art & Science</span></p>
+                <p>to Engineer Dynamic Web Applications</p>
+            </div>
+            
+            <button id="viewWork" onclick="scrollToDiv('projectsNav')"><p>View My Work</p></button>
+            
+            <!-- Social Links -->
+            <div id="socialLinks">
+                
+                <!-- Github -->
+                <div class="links">
+                    <img src="images/socials/gitHub.png" alt="gitHub logo">
+                    <a href="https://github.com/nick-petrocelli" 
+                    target="_blank">GitHub</a>
+                </div>
+                
+                <!-- LinkedIn -->
+                <div class="links">
+                    <img src="images/socials/linkedIn.png" alt="linkedIn logo">
+                    <a href="https://www.linkedin.com/in/nickpetrocelli/" 
+                    target="_blank">LinkedIn</a>
+                </div>
+                
+                <!-- SoundCloud -->
+                <div class="links">
+                    <img src="images/socials/soundcloud.png" alt="SoundCloud logo">
+                    <a href="https://soundcloud.com/dice-beats" 
+                    target="_blank">SoundCloud</a>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    
+    <!-- Main -->
+    <main>
+
+        <!-- About Me -->
+        <p id="aboutMeNav" class="headTag hidden delay">ABOUT ME</p>
+        <p class="line hidden delay"></p>
+        <div id="aboutMe" class="hidden delay">
+            <h1>Hey, I'm Nick. Pleasure to meet you.</h1>
+            <p>I'm a fresh full-stack web developer immersing
+                into the exciting world of digital creation; passionate 
+                about crafting immersive online experiences. I thrive on challenges and
+                problem solving, committed to continuous growth learning and. Let's build 
+                something extraordinary together!</p>
+            </div>
+            
+            
+        <!-- Skills & Languages -->
+        <div id="skills">
+                
+                <!-- Text Box -->
+                <div class="hidden delay"> 
+                    
+                    <p id="skillsNav" class="headTag">SKILLS & LANGUAGES</p>
+                    <p class="line"></p>
+                
+            </div>
+            
+            <!-- Logos -->
+            <div id="languageLogos" class="hidden delay">
+                
+                <div class="logoDiv">
+                    
+                    <a href="https://en.wikipedia.org/wiki/HTML" target="_blank"><img src="images/logos/html.png" alt="language logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/CSS" target="_blank"><img src="images/logos/CSS3_logo.png" alt="language logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"><img src="images/logos/JavaScript-Logo.png" alt="language logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank"><img src="images/logos/Python.png" alt="language logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank"><img id="Java" src="images/logos/Java.png" alt="language logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank"><img src="images/logos/C_Logo.png" alt="language logo"></a>
+                    
+                </div>
+                
+                <div class="logoDiv">
+                    
+                    <a href="https://en.wikipedia.org/wiki/React_(software)" target="_blank"><img src="images/logos/React.png" alt="language logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/Node.js" target="_blank"><img src="images/logos//node.png" alt="language logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/MySQL" target="_blank"><img src="images/logos/Mysql_logo.png" alt="language logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/Flask_(web_framework)" target="_blank"><img src="images/logos/flask.png" alt="language logo"></a>
+                    
+                </div>
+
+                
+                
+            </div>
+            
+        </div>
+        
+        
+        <!-- Projects -->
+        <p id="projectsNav" class="headTag hidden">PROJECTS</p>
+        <p class="line hidden"></p>
+        <!-- Individual Project Divs -->
+        <div id="projects" class="hidden">
+            
+            <!-- Ordinance -->
+            <div id="ordinacne" class="presentation hidden">
+
+                <a href="https://soundcloud.com/dice-beats/sets/ordinance" target="_blank">
+                    <img class="projectImage" src="images/projects/cover art.jpg" alt="snapshot of project site">
+                </a>
+
+                <div class="textHalf hidden">
+
+                    <h1 class="projectTitle">Ordinance</h1></a>
+                    
+                    <h2 class="projectTitle">Objective</h2>
+                    <p >My debut album. Combining three years of practice to create a
+                        complete project. Twelve tracks, all mix, mastered, and produced
+                        by yours truly</p>
+
+                    <h2 class="projectTitle">Description</h2>
+                    <p >This was made during my two years in Pittsburgh, and was
+                        challenging to finish. While I was wrapping up the final touches
+                        on my album, I was struck with the news that my best friend had passed away.
+                        He was a big part of getting me into music, and since then my inspiration 
+                        to finish a song has been tough. 
+                        </p>
+
+                </div>
+            </div>
+
+            <!-- Insta Files -->
+            <div id="instaFilesWAV" class="presentationRight hidden">
+
+                
+                <div class="textHalf">
+                    
+                    <h1 class="projectTitle">Insta_Files.wav</h1>
+                        
+                    <h2 class="projectTitle">Objective</h2>
+                    <p>This project is a collection of short loops I made throughout my next year
+                        of music. Most of them are uploaded to my instagram page, hence the name. 
+                        These songs were important as I focused more on sound design and making crisp,
+                        clear, and hard beats.</p>
+                            
+                    <h2 class="projectTitle">Description</h2>
+                    <p>This project was made before and during the pandemic. I was in the middle of
+                        moving cross-country, and music was about the only thing that could occupy my
+                        day to day while being stuck inside. Although a short and simple project, I hold
+                        this collection high for what I accomplished.
+                    </p>
+                                
+                </div>
+                <a href="https://soundcloud.com/dice-beats/sets/insta_fileswav" target="_blank">
+                    <img class="projectImage projectImageDelay hidden" src="images/projects/instaFiles.jpg" alt="snapshot of project site">
+                </a>
+
+            </div>
+
+            <!-- Time Flies -->
+            <div id="timeFlies" class="presentation hidden">
+
+                <a href="https://soundcloud.com/dice-beats/sets/time-flies-catch-the-moments-when-you-can" target="_blank">
+                    <img class="projectImage" src="images/projects/Time Flies COVER.JPG" alt="snapshot of project site">
+                </a>
+
+                <div class="textHalf hidden">
+
+                    <h1 class="projectTitle">Time Flies, Catch the Moments When You Can</h1>
+                    
+                    <h2 class="projectTitle">Objective</h2>
+                    <p>I wanted to complete my first project before being invested in the hobby
+                        for a year. Many of the songs are not full in sound, but it was a big 
+                        stepping stone for my future work.</p>
+
+                    <h2 class="projectTitle">Description</h2>
+                    <p>My first EP made within my first nine months of learning music production.
+                        Bringing the concept of time, to the sound waves.</p>
+
+                </div>
+
+            </div>
+            
+            <!-- Template -->
+            <div id="tracks" class="presentationRight hidden">
+
+                
+                <div class="textHalf">
+                    
+                    <h1 class="projectTitle">Title</h1>
+                  
+                    <h2 class="projectTitle">Objective</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Dolorem facilis, magnam nesciunt consequatur saepe perspiciatis?</p>
+                            
+                    <h2 class="projectTitle">Description</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Dolorem facilis, magnam nesciunt consequatur saepe perspiciatis? Lorem 
+                        ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ut ex deserunt 
+                        esse voluptates rem modi excepturi dolore sit dolorem numquam, ullam est, 
+                        maxime architecto saepe voluptatem. Explicabo, cum obcaecati.</p>
+                                
+                </div>
+
+
+                <a href="#" tabindex="_blank">
+                    <img class="projectImage hidden projectImageDelay" src="images/projects/project4.png" alt="snapshot of project site">
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Resume -->
+        <div id="resume" class="hidden">
+            <p id="resumeNav" class="headTag">RESUME</p>
+            <p class="line"></p>
+
+            <div id="resumeContainer">
+                
+                <!-- Left Half -->
+                <div id="leftResume">
+                    <div>
+                        <h1 class="resumeTagline">Experience</h1>
+                            <div class="resumeContent">
+                                <h3>Champs Sports; Assistant Manager</h3>
+                                <p>AUG 23 to FEB 24</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, voluptatibus 
+                                    quo dolorum reiciendis cupiditate beatae vero? Deserunt fuga, harum molestiae 
+                                    magni nisi culpa at sit alias possimus voluptatum, fugiat aliquam?</p>
+                            </div>
+
+                            <div class="resumeContent">                                
+                                <h3>The Cheesecake Factory; Server</h3>
+                                <p>OCT 20 to AUG 22</p>
+                                <p>Anticipating guest needs • Wine and bottle service • Excelled training in 
+                                    customer service expertise • Multitask and work as a 
+                                    team • Processed shipment orders </p>
+                            </div>
+                            
+                            <div class="resumeContent">                                
+                                <h3>Tanzy Restaurant; Server</h3>
+                                <p>SEPT 19 to SEPT 20</p>
+                                <p>Wine and bottle service • Upscale dining etiquette • 
+                                    Setup/breakdown dining room for events • Training new team members</p>
+                            </div>
+                                
+                            <div class="resumeContent">                                
+                                <h3>Express Men; Sales Lead</h3>
+                                <p>APR 17 to SEPT 19</p>
+                                <p>Knowledgeable in product to tailor guests needs to reach 
+                                    daily sales goals • In charge of organizing stockroom from 
+                                    scratch • Temporary manager, had to tend to closing and opening 
+                                    paperwork/emails and other manager responsibilities</p>
+                            </div>
+                    
+                    </div>
+
+                </div>
+                
+                <!-- Right Half -->
+                <div id="rightResume">
+
+                    <!-- Education -->
+                    <div>
+                        <h1 class="resumeTagline">Education</h1>
+                            <div class="resumeContent">
+                                <h3>Coding Dojo Bootcamp</h3>
+                                <p>”Coding Dojo” with Colorado Technical University</p>
+                                <p>Completed June 24</p>
+                            </div>
+
+                            <div class="resumeContent">
+                                <h3>Palm Beach State College</h3>
+                                <p> Computer Science Major</p>
+                                <p>Uncompleted Associates (2018-19)</p>
+                            </div>
+
+                            <div class="resumeContent">
+                                <h3>Boca Raton Christian HighSchool</h3>
+                                <p>Student Council Member (2017-18)</p>
+                                <p>Completed June 2018</p>
+                            </div>
+
+                    </div>
+
+                    <!-- References -->
+                    <div>
+                        <h1 class="resumeTagline">References</h1>
+                        <div class="resumeContent">
+                                <h3>Martha Segrera; Previous Manager</h3>
+                                <p>(111)111-1111 // johnnyapple@gmail.com</p>
+                            </div>
+
+                            <div class="resumeContent">
+                                <h3>Jacob Rhodes; Teacher/Mentor</h3>
+                                <p>(111)111-1111 // johnnyapple@gmail.com</p>
+                            </div>
+
+                            <div class="resumeContent">
+                                <h3>Glenn VanLenten; Family Friend</h3>
+                                <p>(111)111-1111 // johnnyapple@gmail.com</p>
+                            </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- Footer // Contact Me -->
+        <footer>
+            <p class="headTag hidden">CONNECT WITH ME</p>
+            <p class="line hidden"></p>
+            
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <div class="contactForm">
+
+                    <input type="hidden" name="access_key" value="c1f3e844-acfa-44d2-98f9-7d55cbc3ee82">
+
+                    <input type="text" name="name" class="contactInputs" placeholder="Your Name" required>
+                    <input type="email" name="email" class="contactInputs" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message..." class="contactInputs" required></textarea>
+                    <button type="submit"><p>Submit</p></button>
+                </div>
+            </form>
+        </footer>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
