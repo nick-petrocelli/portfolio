@@ -17,7 +17,7 @@ function scrollToDiv(divID) {
 }
 
 
-// scroll to top button
+// scroll to top button fade-in effect
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {

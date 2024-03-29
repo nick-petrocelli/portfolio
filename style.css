@@ -237,6 +237,7 @@ main {
             margin-bottom: 10px;
         }
 
+
     /* About Me  */
     #aboutMe {
         width: 75%;
@@ -258,6 +259,7 @@ main {
             font-weight: lighter;
             font-family: 'Oswald';
         }
+
 
     /* Skills */
     #skills {
@@ -291,6 +293,7 @@ main {
                     #Java {
                         height: 175px;
                     } 
+
 
     /* Projects */
     #projects {
@@ -430,7 +433,7 @@ main {
                 }
             .contactForm > button {
                 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-                width: 50%;
+                width: 25%;
                 height: 75px;
                 font-size: 40px;
                 background-color: rgb(243, 144, 86);
@@ -442,7 +445,7 @@ main {
                 text-decoration: none;
                 font-weight: bold;
                 display: flex;
-                margin: 5% 25%;
+                margin: 3% 39%;
                 font-family: 'Montserrat';
                 padding-top: 10px;
                 }
