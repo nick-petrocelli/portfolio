@@ -2,6 +2,7 @@
     margin: 0 auto;
     padding: 0 auto;
 }
+
 body {
     font-family: 'Oswald' ;
     font-weight: 600px;
@@ -53,7 +54,9 @@ nav {
     /* position: fixed;
     top: 0; */
 }
-    /* Left Side of Nav */
+
+
+    /* Left Side of Nav Bar */
     #navLeft {
         /* background-color: rgb(94, 94, 94); */
         display: flex;
@@ -61,6 +64,7 @@ nav {
         width: 60%;
         justify-content: space-between;
     }
+
         /* My Name */
         #myName {
             width: 30%;
@@ -71,6 +75,7 @@ nav {
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
             
         }
+
 
         /* Page Jump To */
         #navLinks {
@@ -88,6 +93,8 @@ nav {
             #navLinks > :nth-child(3) {
                 font-weight: bolder;
             }
+
+    /* Right Side of Nav Bar */
 
         /*Let's Talk Button  */
         nav > button {
@@ -121,6 +128,7 @@ header {
     display: flex;
 }
 
+
     /* Left Side Profile Pic */
     #me {
         border-radius: 50%;
@@ -130,11 +138,13 @@ header {
         margin-top: 20px;
     }
 
+
     /* Right Side */
     #rightProfile {
         /* outline: 2px solid red; */
         width: 70%;
     }
+
 
         /* Header Statement */
         #statement {
@@ -156,6 +166,7 @@ header {
                 text-decoration-thickness: 5px;
                 font-family: 'Montserrat';
             }
+
 
         /* View Work Button */
         #viewWork {
@@ -182,6 +193,7 @@ header {
             #viewWork > p {
                 cursor: pointer;
             }
+
 
         /* Social Links */
         #socialLinks {
@@ -219,7 +231,7 @@ main {
     height: 650px;
 }
 
-    /* Text Divider Font Style */
+    /* Text Divider Font Styling */
     .headTag {
         color: rgb(243, 144, 86);
         display: flex;
@@ -272,6 +284,7 @@ main {
             margin-bottom: 200px;
             padding-top: 25px;
     }
+
             .logoDiv {
                 /* outline: 2px solid red; */
                 display: flex;
@@ -306,6 +319,7 @@ main {
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
         padding: 50px;
     }
+
 
         /* Image on Left Half Divs */
         .presentation{
@@ -346,6 +360,7 @@ main {
                     color: rgba(61,90,128,255);    
                 }
         
+
         /* Image on Right Half Divs */
         .presentationRight {
             /* outline: 2px solid blue; */
@@ -354,6 +369,8 @@ main {
             margin-bottom: 25px;
             text-align: right;
         }
+
+
         .presentationRight > a {
             width: 28%;
         }
@@ -371,36 +388,40 @@ main {
         #resumeContainer {
             display: flex;
         }
-        #leftResume {
-            /* outline: 2px solid red; */
-            width: 50%;
-            margin: 25px;
-            padding-left: 10%;
-        }
-        #rightResume {
-            /* outline: 2px solid red; */
-            width: 50%;
-            margin: 25px;
-            padding-left: 15%;
-        }
-            .resumeTagline {
-                font-family: 'Montserrat';
-                color: rgb(243, 144, 86);
-                margin-bottom: 25px;
-                margin-top: 40px;
+
+
+            #leftResume {
+                /* outline: 2px solid red; */
+                width: 50%;
+                margin: 25px;
+                padding-left: 10%;
             }
-            .resumeContent > h3 {
-                font-size: 110%;
-                color: rgb(41,50,65,);
-                margin-bottom: 5px; 
-                font-family: 'Montserrat';
+
+
+            #rightResume {
+                /* outline: 2px solid red; */
+                width: 50%;
+                margin: 25px;
+                padding-left: 15%;
             }
-            .resumeContent > p {
-                font-size: 110%;
-                color: rgba(61,90,128,255);
-                margin-bottom: 10px;
-                padding-left: 15px;
-            }
+                .resumeTagline {
+                    font-family: 'Montserrat';
+                    color: rgb(243, 144, 86);
+                    margin-bottom: 25px;
+                    margin-top: 40px;
+                }
+                .resumeContent > h3 {
+                    font-size: 110%;
+                    color: rgb(41,50,65,);
+                    margin-bottom: 5px; 
+                    font-family: 'Montserrat';
+                }
+                .resumeContent > p {
+                    font-size: 110%;
+                    color: rgba(61,90,128,255);
+                    margin-bottom: 10px;
+                    padding-left: 15px;
+                }
 
 
     /* Footer */
@@ -414,6 +435,7 @@ main {
             width: 50%;
             padding: 10px 0;
         }
+
             .contactInputs {
                 width: 50%;
                 display: flex;
@@ -431,6 +453,7 @@ main {
                     height: 100px;
                     padding-top: 5px;
                 }
+
             .contactForm > button {
                 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
                 width: 25%;
@@ -502,25 +525,26 @@ main {
         #languageLogos { /* Logo Division */
             transition-delay: 600ms;
         }
-        /* Projects */
-        #ordinance { 
-            transition-delay: 200ms;
-        }
-        #instaFilesWAV { 
-            transition-delay: 200ms;
-        }
-        #timeFlies { 
-            transition-delay: 200ms;
-        }
-        #tracks { 
-            transition-delay: 200ms;
-        }
-        .textHalf {
-            transition-delay: 300ms;
-        }
-        .projectImageDelay {
-            transition-delay: 300ms;
-        }
+
+            /* Projects */
+            #ordinance { 
+                transition-delay: 200ms;
+            }
+            #instaFilesWAV { 
+                transition-delay: 200ms;
+            }
+            #timeFlies { 
+                transition-delay: 200ms;
+            }
+            #tracks { 
+                transition-delay: 200ms;
+            }
+            .textHalf {
+                transition-delay: 300ms;
+            }
+            .projectImageDelay {
+                transition-delay: 300ms;
+            }
 
 /* 
 
